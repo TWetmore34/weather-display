@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<!-- be sure to change this style color to bg gradient -->
+<header class="header bg-info">
+<h1 class="text-center text-light">Weather Dashboard</h1>
+</header>
+<body>
+    <div class="row">
+    <div class="col-3 vh-100">
+        <div id="search-area" class="h-30">
+            <label for="search"><h2>Search by city:</h2></label>
+            <input class="w-100 rounded form-control" placeholder="San Diego" type="search" name="search" id="search">
+            <button id="submit" class="btn btn-primary mt-2 w-100">Search</button>
+            <hr>
+        </div>
+        <div id="display-search" class="h-60">
+            <!-- for this, im gonna add a custom data value equal to the url that stored all the info i think? -->
+            <button value="boston" class="btn btn-secondary w-100 text-dark">Boston</button>
+        </div>
+    </div>
+    <div class="h-50 col-8">
+        <div class="col-12 w-100 border border-dark">
+            <h2 id="city"><span id="date"></span> <span id="logo"></span></h2>
+            <p>Temp: <span class="dailyInfo"></span></p>
+            <p>Wind: <span class="dailyInfo"></span></p>
+            <p>Humidity: <span class="dailyInfo"></span></p>
+            <p>UV Index: <span class="dailyInfo"></span></p>
+        </div>
+        <h2>5-Day Forecast</h2>
+            <div id="fiveDay" class="row">
+                
+                <div class="card-title bg-secondary col-4 mr-3 ml-3">
+                    <h3 class="text-light">3/31/22</h3>
+                    <div class="logo">png</div>
+                    <p class="text-light">Temp: </p>
+                    <p class="text-light">Wind: </p>
+                    <p class="text-light">Humidity: </p>
+                </div>
+                <div class="card-title bg-secondary col-4 mr-3">
+                    <h3 class="text-light">3/31/22</h3>
+                    <div class="logo">png</div>
+                    <p class="text-light">Temp: </p>
+                    <p class="text-light">Wind: </p>
+                    <p class="text-light">Humidity: </p>
+                </div>
+            </div>
+        
+    </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
