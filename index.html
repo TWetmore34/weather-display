@@ -14,7 +14,7 @@
 </header>
 <body>
     <div class="row">
-    <div class="col-3 vh-100">
+    <div class="col-3 vh-100 m-2">
         <div id="search-area" class="h-30">
             <label for="search"><h2>Search by city:</h2></label>
             <input class="w-100 rounded form-control" placeholder="San Diego" type="search" name="search" id="search">
@@ -23,12 +23,12 @@
         </div>
         <div id="display-search" class="h-60">
             <!-- for this, im gonna add a custom data value equal to the url that stored all the info i think? -->
-            <button value="boston" class="btn btn-secondary w-100 text-dark">Boston</button>
         </div>
     </div>
-    <div class="h-50 col-8">
+    <div class="h-50 col-8 m-2">
         <div class="col-12 w-100 border border-dark">
-            <h2 id="city"><span id="date"></span> <span id="logo"></span></h2>
+            <h2 id="city"><span id="date"></span> <img scr='' id="logo"></img
+                ></h2>
             <p>Temp: <span class="dailyInfo"></span></p>
             <p>Wind: <span class="dailyInfo"></span></p>
             <p>Humidity: <span class="dailyInfo"></span></p>
@@ -37,16 +37,37 @@
         <h2>5-Day Forecast</h2>
             <div id="fiveDay" class="row">
                 
-                <div class="card-title bg-secondary col-4 mr-3 ml-3">
-                    <h3 class="text-light">3/31/22</h3>
-                    <div class="logo">png</div>
+                <div class="card-title bg-secondary col-3 mr-3 ml-3">
+                    <h3 class="text-light"></h3>
+                    <div class="logo"></div>
                     <p class="text-light">Temp: </p>
                     <p class="text-light">Wind: </p>
                     <p class="text-light">Humidity: </p>
                 </div>
-                <div class="card-title bg-secondary col-4 mr-3">
+                <div class="card-title bg-secondary col-3 mr-3">
                     <h3 class="text-light">3/31/22</h3>
-                    <div class="logo">png</div>
+                    <div class="logo"></div>
+                    <p class="text-light">Temp: </p>
+                    <p class="text-light">Wind: </p>
+                    <p class="text-light">Humidity: </p>
+                </div>
+                <div class="card-title bg-secondary col-3 mr-3">
+                    <h3 class="text-light">3/31/22</h3>
+                    <div class="logo"></div>
+                    <p class="text-light">Temp: </p>
+                    <p class="text-light">Wind: </p>
+                    <p class="text-light">Humidity: </p>
+                </div>
+                <div class="card-title bg-secondary col-3 mr-3 ml-3">
+                    <h3 class="text-light">3/31/22</h3>
+                    <div class="logo"></div>
+                    <p class="text-light">Temp: </p>
+                    <p class="text-light">Wind: </p>
+                    <p class="text-light">Humidity: </p>
+                </div>
+                <div class="card-title bg-secondary col-3 mr-3">
+                    <h3 class="text-light">3/31/22</h3>
+                    <div class="logo"></div>
                     <p class="text-light">Temp: </p>
                     <p class="text-light">Wind: </p>
                     <p class="text-light">Humidity: </p>
