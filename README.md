@@ -3,6 +3,7 @@ Displays live wether info based on city search. Starting on the left side, the s
 
 The code then creates a new button that saves the search query and allows for easy display or comparison between cities.
 
+https://github.com/TWetmore34/weather-display/blob/main/assets/deployed-ss/Screen%20Shot%202022-07-08%20at%201.02.10%20PM.png?raw=true
 
 
 deployed pages: https://twetmore34.github.io/weather-display/
