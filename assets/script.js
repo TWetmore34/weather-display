@@ -89,6 +89,8 @@ function getLocation() {
             fiveDay.children[4].children[4].innerHTML = 'Humidity: ' + data.daily[4].humidity;
             createButton();
             handleButtonClick();
+            
+            searchEl.value = ''
         })
     })
 };
@@ -169,6 +171,23 @@ function handleButtonClick(){
             let uvi = data.daily[0].uvi;
             dailyEl[3].innerHTML = uvi;
 
+            fiveDay.children[0].children[2].innerHTML = 'Temp: ' + (1.8*(data.daily[0].temp.day-278)+32).toFixed(2);
+            fiveDay.children[1].children[2].innerHTML = 'Temp: ' + (1.8*(data.daily[1].temp.day-278)+32).toFixed(2);
+            fiveDay.children[2].children[2].innerHTML = 'Temp: ' + (1.8*(data.daily[2].temp.day-278)+32).toFixed(2);
+            fiveDay.children[3].children[2].innerHTML = 'Temp: ' + (1.8*(data.daily[3].temp.day-278)+32).toFixed(2);
+            fiveDay.children[4].children[2].innerHTML = 'Temp: ' + (1.8*(data.daily[4].temp.day-278)+32).toFixed(2);
+            // Wind
+            fiveDay.children[0].children[3].innerHTML = 'Wind: ' + (data.daily[0].wind_speed * 2.237).toFixed(2) + 'MPH';
+            fiveDay.children[1].children[3].innerHTML = 'Wind: ' + (data.daily[1].wind_speed * 2.237).toFixed(2) + 'MPH';
+            fiveDay.children[2].children[3].innerHTML = 'Wind: ' + (data.daily[2].wind_speed * 2.237).toFixed(2) + 'MPH';
+            fiveDay.children[3].children[3].innerHTML = 'Wind: ' + (data.daily[3].wind_speed * 2.237).toFixed(2) + 'MPH';
+            fiveDay.children[4].children[3].innerHTML = 'Wind: ' + (data.daily[4].wind_speed * 2.237).toFixed(2) + 'MPH';
+            // Humidity
+            fiveDay.children[0].children[4].innerHTML = 'Humidity: ' + data.daily[0].humidity;
+            fiveDay.children[1].children[4].innerHTML = 'Humidity: ' + data.daily[1].humidity;
+            fiveDay.children[2].children[4].innerHTML = 'Humidity: ' + data.daily[2].humidity;
+            fiveDay.children[3].children[4].innerHTML = 'Humidity: ' + data.daily[3].humidity;
+            fiveDay.children[4].children[4].innerHTML = 'Humidity: ' + data.daily[4].humidity;
 
         })
     })
